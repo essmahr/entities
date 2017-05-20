@@ -1,0 +1,40 @@
+{
+  "entities": [
+    {
+      "name": "Copyright",
+      "html": "&copy;",
+      "css": "\\00a9",
+      "tags": "copyright"
+    },
+    {
+      "name": "Trademark",
+      "html": "&trade;",
+      "css": "\\2122",
+      "tags": "trademark"
+    },
+    {
+      "name": "Left Arrow",
+      "html": "&larr;",
+      "css": "\\2190",
+      "tags": "left arrow"
+    },
+    {
+      "name": "Right Arrow",
+      "html": "&rarr;",
+      "css": "\\2191",
+      "tags": "left arrow"
+    },
+    {
+      "name": "Up Arrow",
+      "html": "&uarr;",
+      "css": "\\2192",
+      "tags": "left arrow"
+    },
+    {
+      "name": "Down Arrow",
+      "html": "&darr;",
+      "css": "\\2193",
+      "tags": "left arrow"
+    }
+  ]
+}
