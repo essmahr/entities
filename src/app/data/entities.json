@@ -22,19 +22,19 @@
       "name": "Right Arrow",
       "html": "&rarr;",
       "css": "\\2191",
-      "tags": "left arrow"
+      "tags": "right arrow"
     },
     {
       "name": "Up Arrow",
       "html": "&uarr;",
       "css": "\\2192",
-      "tags": "left arrow"
+      "tags": "up arrow"
     },
     {
       "name": "Down Arrow",
       "html": "&darr;",
       "css": "\\2193",
-      "tags": "left arrow"
+      "tags": "down arrow"
     }
   ]
 }

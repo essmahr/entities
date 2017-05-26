@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import AppContainer from './containers/AppContainer';
 
+require('./style.scss');
 
 const MOUNT_NODE = document.getElementById('root')
 
@@ -35,8 +36,5 @@ if (process.env.NODE_ENV === 'development') {
   }
 }
 
-// ========================================================
-// Go!
-// ========================================================
 render();
 

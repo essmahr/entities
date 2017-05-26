@@ -1,0 +1,108 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+
+.search-bar-container {
+  border-bottom: 1px solid #ddd;
+}
+
+.search-bar-input {
+  border: 0;
+  padding: 16px;
+  width: 100%;
+  font-size: 24px;
+
+  &:focus {
+    outline: 0;
+  }
+
+  &::placeholder {
+    color: #ddd;
+  }
+}
+
+.entities-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.entity-list-item-outer {
+  position: relative;
+  display: block;
+  flex: 0 0 20%;
+
+  &::after {
+    display: block;
+    content: "";
+    padding-top: 100%;
+  }
+}
+
+.entity-list-item-inner {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-top: 0;
+}
+
+.entity-symbol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 auto;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.entity-name {
+  font-size: 12px;
+  padding: 16px 0;
+}
+
+.entity-actions {
+  display: flex;
+  border-top: 1px solid #ddd;
+}
+
+.copy-button {
+  flex: 0 0 50%;
+  border: 0;
+  background: none;
+  padding: 0;
+
+  &:not(:last-child) {
+    border-right: 1px solid #ddd;
+  }
+}
+
+.copy-button-label {
+  background: #eee;
+  color: #bbb;
+  padding: 2px;
+}
+
+.copy-button-text {
+  padding: 8px;
+  font-family: monospace;
+}

@@ -1,22 +1,13 @@
 import React from 'react';
-
-const EntityListItem = function(props) {
-  const { name } = props;
-
-  return (
-    <li>
-      {name}
-    </li>
-  );
-}
+import EntityListItem from '../EntityListItem';
 
 const EntityList = function(props) {
   const entities = props.entities.map((entity, idx) => {
-    return <EntityListItem key={entity.html} {...entity} />
+    return <EntityListItem key={`${entity.html}-${idx}`} {...entity} />
   });
 
   return (
-    <ul>
+    <ul className="entities-container">
       {entities}
     </ul>
   );

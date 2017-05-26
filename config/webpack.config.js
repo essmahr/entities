@@ -30,6 +30,14 @@ var common = {
           },
         },
       },
+      {
+        test: /\.scss$/,
+        loaders: [
+          'style-loader?sourceMap',
+          'css-loader',
+          'sass-loader?sourceMap'
+        ]
+      }
     ]
   },
   resolve: {

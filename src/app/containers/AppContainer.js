@@ -13,13 +13,24 @@ export default class AppContainer extends Component {
 
     this.state = {
       searchTerm: '',
-      entities,
+      entities: entities.concat(entities),
+      searchResults: entities.concat(entities),
     };
   }
+
 
   handleInput(event) {
     this.setState({
       searchTerm: event.target.value,
+      searchResults: this.getEntitiesForTerm(event.target.value),
+    });
+  }
+
+  getEntitiesForTerm(term) {
+    if (!term) return this.state.entities;
+
+    return this.state.entities.filter((entity) => {
+      return entity.tags.indexOf(term.toLowerCase()) > -1;
     });
   }
 
@@ -27,7 +38,7 @@ export default class AppContainer extends Component {
     return (
       <div className="page">
         <SearchBar onChange={this.handleInput} searchTerm={this.state.searchTerm} />
-        <EntityList entities={this.state.entities} searchTerm={this.state.searchTerm} />
+        <EntityList entities={this.state.searchResults} searchTerm={this.state.searchTerm} />
       </div>
     );
   }
