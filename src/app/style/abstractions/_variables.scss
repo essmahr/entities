@@ -1,0 +1,17 @@
+$font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$font-monospace: "Fira Mono";
+
+$gutter: 16px;
+
+$color-background: #F1EEE9;
+$color-accent: #577697;
+$color-secondary: #C62E3B;
+
+$color-background: #E9E3DF;
+$color-accent: #333945;
+$color-secondary: #D08144;
+
+$grey-light: scale-color($color-background, $lightness: -2%, $saturation: -10%);
+$grey-mid: mix($color-accent, scale-color($color-background, $lightness: -10%, $saturation: -30%), 1%);
+$grey-dark: mix($color-accent, scale-color($color-background, $lightness: -30%, $saturation: -50%), 3%);
+

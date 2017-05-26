@@ -34,7 +34,7 @@ var common = {
         test: /\.scss$/,
         loaders: [
           'style-loader?sourceMap',
-          'css-loader',
+          'css-loader?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]',
           'sass-loader?sourceMap'
         ]
       }

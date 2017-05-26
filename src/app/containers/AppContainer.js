@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import copyToClipboard from '../lib/copyToClipboard';
 import SearchBar from '../components/SearchBar';
 import EntityList from '../components/EntityList';
 
@@ -34,11 +35,20 @@ export default class AppContainer extends Component {
     });
   }
 
+  handleButtonClick(text, element) {
+    console.log(element);
+    copyToClipboard(text);
+  }
+
   render() {
     return (
       <div className="page">
         <SearchBar onChange={this.handleInput} searchTerm={this.state.searchTerm} />
-        <EntityList entities={this.state.searchResults} searchTerm={this.state.searchTerm} />
+        <EntityList
+          entities={this.state.searchResults}
+          searchTerm={this.state.searchTerm}
+          onButtonClick={this.handleButtonClick}
+        />
       </div>
     );
   }

@@ -1,26 +1,22 @@
 import React from 'react';
+import CSSModules from 'react-css-modules';
+import styles from './style.scss';
+
+import CopyButton from '../CopyButton';
 
 const EntityListItem = function(props) {
-  const { name, html, css } = props;
+  const { name, html, css, onButtonClick } = props;
 
   return (
-    <li className="entity-list-item-outer">
-      <div className="entity-list-item-inner">
-        <div className="entity-symbol" dangerouslySetInnerHTML={{__html: html}}></div>
-        <div className="entity-name">{name}</div>
-        <div className="entity-actions">
-          <button className="copy-button">
-            <div className="copy-button-label">HTML</div>
-            <div className="copy-button-text">{html}</div>
-          </button>
-          <button className="copy-button">
-            <div className="copy-button-label">CSS</div>
-            <div className="copy-button-text">{css}</div>
-          </button>
-        </div>
+    <li styleName="entity-list-item-outer">
+      <div styleName="entity-list-item-inner">
+        <div styleName="entity-name">{name}</div>
+        <div styleName="entity-symbol" dangerouslySetInnerHTML={{__html: html}}></div>
+        <CopyButton onClick={props.onButtonClick} type="css" content={css} styles={styles} />
+        <CopyButton onClick={props.onButtonClick} type="html" content={html} styles={styles} />
       </div>
     </li>
   );
 }
 
-export default EntityListItem;
+export default CSSModules(EntityListItem, styles);

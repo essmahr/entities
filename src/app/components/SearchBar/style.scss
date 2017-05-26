@@ -1,0 +1,17 @@
+@import "../../style/resources";
+
+.search-bar-container {
+  border-bottom: 2px solid $grey-mid;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.search-bar-input {
+  @extend %form-input;
+  background-color: $color-background;
+  border: 0;
+  padding: ($gutter * 2) 0 ($gutter * 2) ($gutter * 2);
+  width: 100%;
+  font-size: 24px;
+}

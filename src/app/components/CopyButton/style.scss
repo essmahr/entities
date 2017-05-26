@@ -1,0 +1,37 @@
+@import "../../style/resources";
+
+.copy-button {
+  @extend %reset-button;
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: $grey-mid;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-secondary;
+  }
+}
+
+.copy-button-html {
+  composes: copy-button;
+  left: 0;
+}
+
+.copy-button-css {
+  composes: copy-button;
+  right: 0;
+}
+
+.copy-button-text {
+  padding: $gutter;
+  font-family: monospace;
+}

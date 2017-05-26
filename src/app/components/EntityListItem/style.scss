@@ -1,0 +1,97 @@
+@import "../../style/resources";
+
+.entity-list-item-outer {
+  position: relative;
+  display: block;
+  flex: 0 0 20%;
+
+  &::after {
+    display: block;
+    content: "";
+    padding-top: 100%;
+  }
+}
+
+.entity-list-item-inner {
+  position: absolute;
+  top: 0;
+  left: -1px;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #fff;
+  margin: $gutter;
+
+  &:hover {
+    .copy-button,
+    .entity-name {
+      opacity: 1;
+    }
+  }
+}
+
+.entity-symbol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1 0 auto;
+  font-size: 80px;
+  line-height: 50px;
+  font-weight: 300;
+  color: $color-accent;
+}
+
+.entity-name {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  font-size: 10px;
+  font-weight: 500;
+  padding: $gutter 0;
+  color: $grey-dark;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.copy-button {
+  @extend %reset-button;
+  position: absolute;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  text-align: center;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: $grey-mid;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-secondary;
+  }
+}
+
+.copy-button-html {
+  composes: copy-button;
+  left: 0;
+}
+
+.copy-button-css {
+  composes: copy-button;
+  right: 0;
+}
+
+.copy-button-text {
+  padding: $gutter;
+  font-family: monospace;
+}
+

@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import AppContainer from './containers/AppContainer';
 
-require('./style.scss');
+import './style/global.scss';
 
 const MOUNT_NODE = document.getElementById('root')
 
