@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import copyToClipboard from '../lib/copyToClipboard';
+import FlyAway from '../components/FlyAway';
 import SearchBar from '../components/SearchBar';
 import EntityList from '../components/EntityList';
 
@@ -11,11 +12,14 @@ export default class AppContainer extends Component {
     super(props);
 
     this.handleInput = this.handleInput.bind(this);
+    this.handleButtonClick = this.handleButtonClick.bind(this);
 
     this.state = {
       searchTerm: '',
       entities: entities.concat(entities),
       searchResults: entities.concat(entities),
+      currentCopy: null,
+      FlyAwayTarget: null,
     };
   }
 
@@ -35,9 +39,17 @@ export default class AppContainer extends Component {
     });
   }
 
-  handleButtonClick(text, element) {
-    console.log(element);
+  handleButtonClick(text, element, event) {
     copyToClipboard(text);
+    this.setState({
+      currentCopy: {
+        stamp: new Date().getTime(),
+        coords: {
+          x: event.pageX,
+          y: event.pageY - 40,
+        },
+      }
+    });
   }
 
   render() {
@@ -49,6 +61,7 @@ export default class AppContainer extends Component {
           searchTerm={this.state.searchTerm}
           onButtonClick={this.handleButtonClick}
         />
+        <FlyAway currentCopy={this.state.currentCopy} />
       </div>
     );
   }

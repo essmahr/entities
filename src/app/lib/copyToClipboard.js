@@ -27,11 +27,12 @@ const copyToClipboard = function(text) {
 
   try {
     succeeded = document.execCommand('copy');
-    console.log('success');
   }
   catch(err) {
-    console.log('failure');
     succeeded = false;
+  }
+  finally {
+    fakeElem.parentElement.removeChild(fakeElem);
   }
 }
 

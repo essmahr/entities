@@ -9,7 +9,7 @@ class CopyButton extends Component {
 
   onButtonClick(evt) {
     evt.preventDefault();
-    this.props.onClick(this.props.content, this.el);
+    this.props.onClick(this.props.content, this.el, evt);
   }
 
   render() {
