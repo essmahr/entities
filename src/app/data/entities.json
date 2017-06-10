@@ -1,40 +1,1983 @@
-{
-  "entities": [
-    {
-      "name": "Copyright",
-      "html": "&copy;",
-      "css": "\\00a9",
-      "tags": "copyright"
-    },
-    {
-      "name": "Trademark",
-      "html": "&trade;",
-      "css": "\\2122",
-      "tags": "trademark"
-    },
-    {
-      "name": "Left Arrow",
-      "html": "&larr;",
-      "css": "\\2190",
-      "tags": "left arrow"
-    },
-    {
-      "name": "Right Arrow",
-      "html": "&rarr;",
-      "css": "\\2191",
-      "tags": "right arrow"
-    },
-    {
-      "name": "Up Arrow",
-      "html": "&uarr;",
-      "css": "\\2192",
-      "tags": "up arrow"
-    },
-    {
-      "name": "Down Arrow",
-      "html": "&darr;",
-      "css": "\\2193",
-      "tags": "down arrow"
-    }
-  ]
-}
+[
+  {
+    "name": "quotation mark",
+    "html": "&quot;",
+    "css": "\\0022",
+    "category": "special-characters",
+    "tags": "quotation mark"
+  },
+  {
+    "name": "number sign",
+    "html": "&num;",
+    "css": "\\0023",
+    "category": "special-characters",
+    "tags": "number sign"
+  },
+  {
+    "name": "dollar sign",
+    "html": "&dollar;",
+    "css": "\\0024",
+    "category": "special-characters",
+    "tags": "dollar sign"
+  },
+  {
+    "name": "percent sign",
+    "html": "&percnt;",
+    "css": "\\0025",
+    "category": "special-characters",
+    "tags": "percent sign"
+  },
+  {
+    "name": "ampersand",
+    "html": "&amp;",
+    "css": "\\0026",
+    "category": "special-characters",
+    "tags": "ampersand"
+  },
+  {
+    "name": "apostrophe",
+    "html": "&apos;",
+    "css": "\\0027",
+    "category": "special-characters",
+    "tags": "apostrophe"
+  },
+  {
+    "name": "left parenthesis",
+    "html": "&lpar;",
+    "css": "\\0028",
+    "category": "special-characters",
+    "tags": "left parenthesis"
+  },
+  {
+    "name": "right parenthesis",
+    "html": "&rpar;",
+    "css": "\\0029",
+    "category": "special-characters",
+    "tags": "right parenthesis"
+  },
+  {
+    "name": "asterisk",
+    "html": "&ast;",
+    "css": "\\002a",
+    "category": "special-characters",
+    "tags": "asterisk"
+  },
+  {
+    "name": "plus sign",
+    "html": "&plus;",
+    "css": "\\002b",
+    "category": "special-characters",
+    "tags": "plus sign"
+  },
+  {
+    "name": "comma",
+    "html": "&comma;",
+    "css": "\\002c",
+    "category": "special-characters",
+    "tags": "comma"
+  },
+  {
+    "name": "hyphen-minus",
+    "html": "&minus;",
+    "css": "\\002d",
+    "category": "special-characters",
+    "tags": "hyphenminus"
+  },
+  {
+    "name": "full stop; period",
+    "html": "&period;",
+    "css": "\\002e",
+    "category": "special-characters",
+    "tags": "full stop period"
+  },
+  {
+    "name": "solidus; slash",
+    "html": "&sol;",
+    "css": "\\002f",
+    "category": "special-characters",
+    "tags": "solidus slash"
+  },
+  {
+    "name": "colon",
+    "html": "&colon;",
+    "css": "\\003a",
+    "category": "special-characters",
+    "tags": "colon"
+  },
+  {
+    "name": "semicolon",
+    "html": "&semi;",
+    "css": "\\003b",
+    "category": "special-characters",
+    "tags": "semicolon"
+  },
+  {
+    "name": "less-than",
+    "html": "&lt;",
+    "css": "\\003c",
+    "category": "special-characters",
+    "tags": "lessthan"
+  },
+  {
+    "name": "equals",
+    "html": "&equals;",
+    "css": "\\003d",
+    "category": "special-characters",
+    "tags": "equals"
+  },
+  {
+    "name": "greater-than sign",
+    "html": "&gt;",
+    "css": "\\003e",
+    "category": "special-characters",
+    "tags": "greaterthan sign"
+  },
+  {
+    "name": "question mark",
+    "html": "&quest;",
+    "css": "\\003f",
+    "category": "special-characters",
+    "tags": "question mark"
+  },
+  {
+    "name": "at sign; commercial at",
+    "html": "&commat;",
+    "css": "\\0040",
+    "category": "special-characters",
+    "tags": "at sign commercial at"
+  },
+  {
+    "name": "left square bracket",
+    "html": "&lsqb;",
+    "css": "\\005b",
+    "category": "special-characters",
+    "tags": "left square bracket"
+  },
+  {
+    "name": "backslash",
+    "html": "&bsol;",
+    "css": "\\005c",
+    "category": "special-characters",
+    "tags": "backslash"
+  },
+  {
+    "name": "right square bracket",
+    "html": "&rsqb;",
+    "css": "\\005d",
+    "category": "special-characters",
+    "tags": "right square bracket"
+  },
+  {
+    "name": "circumflex accent",
+    "html": "&Hat;",
+    "css": "\\005e",
+    "category": "special-characters",
+    "tags": "circumflex accent"
+  },
+  {
+    "name": "low line",
+    "html": "&lowbar;",
+    "css": "\\005f",
+    "category": "special-characters",
+    "tags": "low line"
+  },
+  {
+    "name": "grave accent",
+    "html": "&grave;",
+    "css": "\\0060",
+    "category": "special-characters",
+    "tags": "grave accent"
+  },
+  {
+    "name": "left curly bracket",
+    "html": "&lcub;",
+    "css": "\\007b",
+    "category": "special-characters",
+    "tags": "left curly bracket"
+  },
+  {
+    "name": "vertical bar",
+    "html": "&verbar;",
+    "css": "\\007c",
+    "category": "special-characters",
+    "tags": "vertical bar"
+  },
+  {
+    "name": "right curly bracket",
+    "html": "&rcub;",
+    "css": "\\007d",
+    "category": "special-characters",
+    "tags": "right curly bracket"
+  },
+  {
+    "name": "tilde",
+    "html": "&#125;",
+    "css": "\\007e",
+    "category": "special-characters",
+    "tags": "tilde"
+  },
+  {
+    "name": "no-break space",
+    "html": "&nbsp;",
+    "css": "\\00a0",
+    "category": "latin",
+    "tags": "nobreak space"
+  },
+  {
+    "name": "inverted exclamation mark",
+    "html": "&iexcl;",
+    "css": "\\00a1",
+    "category": "latin",
+    "tags": "inverted exclamation mark"
+  },
+  {
+    "name": "cent sign",
+    "html": "&cent;",
+    "css": "\\00a2",
+    "category": "latin",
+    "tags": "cent sign"
+  },
+  {
+    "name": "pound sterling sign",
+    "html": "&pound;",
+    "css": "\\00a3",
+    "category": "latin",
+    "tags": "pound sterling sign"
+  },
+  {
+    "name": "general currency sign",
+    "html": "&curren;",
+    "css": "\\00a4",
+    "category": "latin",
+    "tags": "general currency sign"
+  },
+  {
+    "name": "yen sign",
+    "html": "&yen;",
+    "css": "\\00a5",
+    "category": "latin",
+    "tags": "yen sign"
+  },
+  {
+    "name": "Indian Rupee (INR) sign",
+    "html": "&#x20B9;",
+    "css": "\\20B9",
+    "category": "latin",
+    "tags": "indian rupee inr sign"
+  },
+  {
+    "name": "broken (vertical) bar",
+    "html": "&brvbar;",
+    "css": "\\00a6",
+    "category": "latin",
+    "tags": "broken vertical bar"
+  },
+  {
+    "name": "section sign",
+    "html": "&sect;",
+    "css": "\\00a7",
+    "category": "latin",
+    "tags": "section sign"
+  },
+  {
+    "name": "umlaut (dieresis)",
+    "html": "&uml;",
+    "css": "\\00a8",
+    "category": "latin",
+    "tags": "umlaut dieresis"
+  },
+  {
+    "name": "copyright sign",
+    "html": "&copy;",
+    "css": "\\00a9",
+    "category": "latin",
+    "tags": "copyright sign"
+  },
+  {
+    "name": "ordinal indicator, feminine",
+    "html": "&ordf;",
+    "css": "\\00aa",
+    "category": "latin",
+    "tags": "ordinal indicator feminine"
+  },
+  {
+    "name": "angle quotation mark, left",
+    "html": "&laquo;",
+    "css": "\\00ab",
+    "category": "latin",
+    "tags": "angle quotation mark left"
+  },
+  {
+    "name": "not sign",
+    "html": "&not;",
+    "css": "\\00ac",
+    "category": "latin",
+    "tags": "not sign"
+  },
+  {
+    "name": "soft hyphen",
+    "html": "&shy;",
+    "css": "\\00ad",
+    "category": "latin",
+    "tags": "soft hyphen"
+  },
+  {
+    "name": "registered sign",
+    "html": "&reg;",
+    "css": "\\00ae",
+    "category": "latin",
+    "tags": "registered sign"
+  },
+  {
+    "name": "macron",
+    "html": "&macr;",
+    "css": "\\00af",
+    "category": "latin",
+    "tags": "macron"
+  },
+  {
+    "name": "degree sign",
+    "html": "&deg;",
+    "css": "\\00b0",
+    "category": "latin",
+    "tags": "degree sign"
+  },
+  {
+    "name": "plus-or-minus sign",
+    "html": "&plusmn;",
+    "css": "\\00b1",
+    "category": "latin",
+    "tags": "plusorminus sign"
+  },
+  {
+    "name": "superscript two",
+    "html": "&sup2;",
+    "css": "\\00b2",
+    "category": "latin",
+    "tags": "superscript two"
+  },
+  {
+    "name": "superscript three",
+    "html": "&sup3;",
+    "css": "\\00b3",
+    "category": "latin",
+    "tags": "superscript three"
+  },
+  {
+    "name": "acute accent",
+    "html": "&acute;",
+    "css": "\\00b4",
+    "category": "latin",
+    "tags": "acute accent"
+  },
+  {
+    "name": "micro sign",
+    "html": "&micro;",
+    "css": "\\00b5",
+    "category": "latin",
+    "tags": "micro sign"
+  },
+  {
+    "name": "pilcrow (paragraph sign)",
+    "html": "&para;",
+    "css": "\\00b6",
+    "category": "latin",
+    "tags": "pilcrow paragraph sign"
+  },
+  {
+    "name": "middle dot",
+    "html": "&middot;",
+    "css": "\\00b7",
+    "category": "latin",
+    "tags": "middle dot"
+  },
+  {
+    "name": "cedilla",
+    "html": "&cedil;",
+    "css": "\\00b8",
+    "category": "latin",
+    "tags": "cedilla"
+  },
+  {
+    "name": "superscript one",
+    "html": "&sup1;",
+    "css": "\\00b9",
+    "category": "latin",
+    "tags": "superscript one"
+  },
+  {
+    "name": "ordinal indicator, masculine",
+    "html": "&ordm;",
+    "css": "\\00ba",
+    "category": "latin",
+    "tags": "ordinal indicator masculine"
+  },
+  {
+    "name": "angle quotation mark, right",
+    "html": "&raquo;",
+    "css": "\\00bb",
+    "category": "latin",
+    "tags": "angle quotation mark right"
+  },
+  {
+    "name": "fraction one-quarter",
+    "html": "&frac14;",
+    "css": "\\00bc",
+    "category": "latin",
+    "tags": "fraction onequarter"
+  },
+  {
+    "name": "fraction one-half",
+    "html": "&frac12;",
+    "css": "\\00bd",
+    "category": "latin",
+    "tags": "fraction onehalf"
+  },
+  {
+    "name": "fraction three-quarters",
+    "html": "&frac34;",
+    "css": "\\00be",
+    "category": "latin",
+    "tags": "fraction threequarters"
+  },
+  {
+    "name": "inverted question mark",
+    "html": "&iquest;",
+    "css": "\\00bf",
+    "category": "latin",
+    "tags": "inverted question mark"
+  },
+  {
+    "name": "capital A, grave accent",
+    "html": "&Agrave;",
+    "css": "\\00c0",
+    "category": "latin",
+    "tags": "capital a grave accent"
+  },
+  {
+    "name": "capital A, acute accent",
+    "html": "&Aacute;",
+    "css": "\\00c1",
+    "category": "latin",
+    "tags": "capital a acute accent"
+  },
+  {
+    "name": "capital A, circumflex accent",
+    "html": "&Acirc;",
+    "css": "\\00c2",
+    "category": "latin",
+    "tags": "capital a circumflex accent"
+  },
+  {
+    "name": "capital A, tilde",
+    "html": "&Atilde;",
+    "css": "\\00c3",
+    "category": "latin",
+    "tags": "capital a tilde"
+  },
+  {
+    "name": "capital A, dieresis or umlaut mark",
+    "html": "&Auml;",
+    "css": "\\00c4",
+    "category": "latin",
+    "tags": "capital a dieresis or umlaut mark"
+  },
+  {
+    "name": "capital A, ring",
+    "html": "&Aring;",
+    "css": "\\00c5",
+    "category": "latin",
+    "tags": "capital a ring"
+  },
+  {
+    "name": "capital AE diphthong (ligature)",
+    "html": "&AElig;",
+    "css": "\\00c6",
+    "category": "latin",
+    "tags": "capital ae diphthong ligature"
+  },
+  {
+    "name": "capital C, cedilla",
+    "html": "&Ccedil;",
+    "css": "\\00c7",
+    "category": "latin",
+    "tags": "capital c cedilla"
+  },
+  {
+    "name": "capital E, grave accent",
+    "html": "&Egrave;",
+    "css": "\\00c8",
+    "category": "latin",
+    "tags": "capital e grave accent"
+  },
+  {
+    "name": "capital E, acute accent",
+    "html": "&Eacute;",
+    "css": "\\00c9",
+    "category": "latin",
+    "tags": "capital e acute accent"
+  },
+  {
+    "name": "capital E, circumflex accent",
+    "html": "&Ecirc;",
+    "css": "\\00ca",
+    "category": "latin",
+    "tags": "capital e circumflex accent"
+  },
+  {
+    "name": "capital E, dieresis or umlaut mark",
+    "html": "&Euml;",
+    "css": "\\00cb",
+    "category": "latin",
+    "tags": "capital e dieresis or umlaut mark"
+  },
+  {
+    "name": "capital I, grave accent",
+    "html": "&Igrave;",
+    "css": "\\00cc",
+    "category": "latin",
+    "tags": "capital i grave accent"
+  },
+  {
+    "name": "capital I, acute accent",
+    "html": "&Iacute;",
+    "css": "\\00cd",
+    "category": "latin",
+    "tags": "capital i acute accent"
+  },
+  {
+    "name": "capital I, circumflex accent",
+    "html": "&Icirc;",
+    "css": "\\00ce",
+    "category": "latin",
+    "tags": "capital i circumflex accent"
+  },
+  {
+    "name": "capital I, dieresis or umlaut mark",
+    "html": "&Iuml;",
+    "css": "\\00cf",
+    "category": "latin",
+    "tags": "capital i dieresis or umlaut mark"
+  },
+  {
+    "name": "capital Eth, Icelandic",
+    "html": "&ETH;",
+    "css": "\\00d0",
+    "category": "latin",
+    "tags": "capital eth icelandic"
+  },
+  {
+    "name": "capital N, tilde",
+    "html": "&Ntilde;",
+    "css": "\\00d1",
+    "category": "latin",
+    "tags": "capital n tilde"
+  },
+  {
+    "name": "capital O, grave accent",
+    "html": "&Ograve;",
+    "css": "\\00d2",
+    "category": "latin",
+    "tags": "capital o grave accent"
+  },
+  {
+    "name": "capital O, acute accent",
+    "html": "&Oacute;",
+    "css": "\\00d3",
+    "category": "latin",
+    "tags": "capital o acute accent"
+  },
+  {
+    "name": "capital O, circumflex accent",
+    "html": "&Ocirc;",
+    "css": "\\00d4",
+    "category": "latin",
+    "tags": "capital o circumflex accent"
+  },
+  {
+    "name": "capital O, tilde",
+    "html": "&Otilde;",
+    "css": "\\00d5",
+    "category": "latin",
+    "tags": "capital o tilde"
+  },
+  {
+    "name": "capital O, dieresis or umlaut mark",
+    "html": "&Ouml;",
+    "css": "\\00d6",
+    "category": "latin",
+    "tags": "capital o dieresis or umlaut mark"
+  },
+  {
+    "name": "multiply sign",
+    "html": "&times;",
+    "css": "\\00d7",
+    "category": "latin",
+    "tags": "multiply sign"
+  },
+  {
+    "name": "capital O, slash",
+    "html": "&Oslash;",
+    "css": "\\00d8",
+    "category": "latin",
+    "tags": "capital o slash"
+  },
+  {
+    "name": "capital U, grave accent",
+    "html": "&Ugrave;",
+    "css": "\\00d9",
+    "category": "latin",
+    "tags": "capital u grave accent"
+  },
+  {
+    "name": "capital U, acute accent",
+    "html": "&Uacute;",
+    "css": "\\00da",
+    "category": "latin",
+    "tags": "capital u acute accent"
+  },
+  {
+    "name": "capital U, circumflex accent",
+    "html": "&Ucirc;",
+    "css": "\\00db",
+    "category": "latin",
+    "tags": "capital u circumflex accent"
+  },
+  {
+    "name": "capital U, dieresis or umlaut mark",
+    "html": "&Uuml;",
+    "css": "\\00dc",
+    "category": "latin",
+    "tags": "capital u dieresis or umlaut mark"
+  },
+  {
+    "name": "capital Y, acute accent",
+    "html": "&Yacute;",
+    "css": "\\00dd",
+    "category": "latin",
+    "tags": "capital y acute accent"
+  },
+  {
+    "name": "capital THORN, Icelandic",
+    "html": "&THORN;",
+    "css": "\\00de",
+    "category": "latin",
+    "tags": "capital thorn icelandic"
+  },
+  {
+    "name": "small sharp s, German (sz ligature)",
+    "html": "&szlig;",
+    "css": "\\00df",
+    "category": "latin",
+    "tags": "small sharp s german sz ligature"
+  },
+  {
+    "name": "small a, grave accent",
+    "html": "&agrave;",
+    "css": "\\00e0",
+    "category": "latin",
+    "tags": "small a grave accent"
+  },
+  {
+    "name": "small a, acute accent",
+    "html": "&aacute;",
+    "css": "\\00e1",
+    "category": "latin",
+    "tags": "small a acute accent"
+  },
+  {
+    "name": "small a, circumflex accent",
+    "html": "&acirc;",
+    "css": "\\00e2",
+    "category": "latin",
+    "tags": "small a circumflex accent"
+  },
+  {
+    "name": "small a, tilde",
+    "html": "&atilde;",
+    "css": "\\00e3",
+    "category": "latin",
+    "tags": "small a tilde"
+  },
+  {
+    "name": "small a, dieresis or umlaut mark",
+    "html": "&auml;",
+    "css": "\\00e4",
+    "category": "latin",
+    "tags": "small a dieresis or umlaut mark"
+  },
+  {
+    "name": "small a, ring",
+    "html": "&aring;",
+    "css": "\\00e5",
+    "category": "latin",
+    "tags": "small a ring"
+  },
+  {
+    "name": "small ae diphthong (ligature)",
+    "html": "&aelig;",
+    "css": "\\00e6",
+    "category": "latin",
+    "tags": "small ae diphthong ligature"
+  },
+  {
+    "name": "small c, cedilla",
+    "html": "&ccedil;",
+    "css": "\\00e7",
+    "category": "latin",
+    "tags": "small c cedilla"
+  },
+  {
+    "name": "small e, grave accent",
+    "html": "&egrave;",
+    "css": "\\00e8",
+    "category": "latin",
+    "tags": "small e grave accent"
+  },
+  {
+    "name": "small e, acute accent",
+    "html": "&eacute;",
+    "css": "\\00e9",
+    "category": "latin",
+    "tags": "small e acute accent"
+  },
+  {
+    "name": "small e, circumflex accent",
+    "html": "&ecirc;",
+    "css": "\\00ea",
+    "category": "latin",
+    "tags": "small e circumflex accent"
+  },
+  {
+    "name": "small e, dieresis or umlaut mark",
+    "html": "&euml;",
+    "css": "\\00eb",
+    "category": "latin",
+    "tags": "small e dieresis or umlaut mark"
+  },
+  {
+    "name": "small i, grave accent",
+    "html": "&igrave;",
+    "css": "\\00ec",
+    "category": "latin",
+    "tags": "small i grave accent"
+  },
+  {
+    "name": "small i, acute accent",
+    "html": "&iacute;",
+    "css": "\\00ed",
+    "category": "latin",
+    "tags": "small i acute accent"
+  },
+  {
+    "name": "small i, circumflex accent",
+    "html": "&icirc;",
+    "css": "\\00ee",
+    "category": "latin",
+    "tags": "small i circumflex accent"
+  },
+  {
+    "name": "small i, dieresis or umlaut mark",
+    "html": "&iuml;",
+    "css": "\\00ef",
+    "category": "latin",
+    "tags": "small i dieresis or umlaut mark"
+  },
+  {
+    "name": "small eth, Icelandic",
+    "html": "&eth;",
+    "css": "\\00f0",
+    "category": "latin",
+    "tags": "small eth icelandic"
+  },
+  {
+    "name": "small n, tilde",
+    "html": "&ntilde;",
+    "css": "\\00f1",
+    "category": "latin",
+    "tags": "small n tilde"
+  },
+  {
+    "name": "small o, grave accent",
+    "html": "&ograve;",
+    "css": "\\00f2",
+    "category": "latin",
+    "tags": "small o grave accent"
+  },
+  {
+    "name": "small o, acute accent",
+    "html": "&oacute;",
+    "css": "\\00f3",
+    "category": "latin",
+    "tags": "small o acute accent"
+  },
+  {
+    "name": "small o, circumflex accent",
+    "html": "&ocirc;",
+    "css": "\\00f4",
+    "category": "latin",
+    "tags": "small o circumflex accent"
+  },
+  {
+    "name": "small o, tilde",
+    "html": "&otilde;",
+    "css": "\\00f5",
+    "category": "latin",
+    "tags": "small o tilde"
+  },
+  {
+    "name": "small o, dieresis or umlaut mark",
+    "html": "&ouml;",
+    "css": "\\00f6",
+    "category": "latin",
+    "tags": "small o dieresis or umlaut mark"
+  },
+  {
+    "name": "divide sign",
+    "html": "&divide;",
+    "css": "\\00f7",
+    "category": "latin",
+    "tags": "divide sign"
+  },
+  {
+    "name": "small o, slash",
+    "html": "&oslash;",
+    "css": "\\00f8",
+    "category": "latin",
+    "tags": "small o slash"
+  },
+  {
+    "name": "small u, grave accent",
+    "html": "&ugrave;",
+    "css": "\\00f9",
+    "category": "latin",
+    "tags": "small u grave accent"
+  },
+  {
+    "name": "small u, acute accent",
+    "html": "&uacute;",
+    "css": "\\00fa",
+    "category": "latin",
+    "tags": "small u acute accent"
+  },
+  {
+    "name": "small u, circumflex accent",
+    "html": "&ucirc;",
+    "css": "\\00fb",
+    "category": "latin",
+    "tags": "small u circumflex accent"
+  },
+  {
+    "name": "small u, dieresis or umlaut mark",
+    "html": "&uuml;",
+    "css": "\\00fc",
+    "category": "latin",
+    "tags": "small u dieresis or umlaut mark"
+  },
+  {
+    "name": "small y, acute accent",
+    "html": "&yacute;",
+    "css": "\\00fd",
+    "category": "latin",
+    "tags": "small y acute accent"
+  },
+  {
+    "name": "small thorn, Icelandic",
+    "html": "&thorn;",
+    "css": "\\00fe",
+    "category": "latin",
+    "tags": "small thorn icelandic"
+  },
+  {
+    "name": "small y, dieresis or umlaut mark",
+    "html": "&yuml;",
+    "css": "\\00ff",
+    "category": "latin",
+    "tags": "small y dieresis or umlaut mark"
+  },
+  {
+    "name": "latin capital ligature oe",
+    "html": "&OElig;",
+    "css": "\\0152",
+    "category": "latin-extended",
+    "tags": "latin capital ligature oe"
+  },
+  {
+    "name": "latin small ligature oe",
+    "html": "&oelig;",
+    "css": "\\0153",
+    "category": "latin-extended",
+    "tags": "latin small ligature oe"
+  },
+  {
+    "name": "latin capital letter s with caron",
+    "html": "&Scaron;",
+    "css": "\\0160",
+    "category": "latin-extended",
+    "tags": "latin capital letter s with caron"
+  },
+  {
+    "name": "latin small letter s with caron",
+    "html": "&scaron;",
+    "css": "\\0161",
+    "category": "latin-extended",
+    "tags": "latin small letter s with caron"
+  },
+  {
+    "name": "latin capital letter y with diaeresis",
+    "html": "&Yuml;",
+    "css": "\\0178",
+    "category": "latin-extended",
+    "tags": "latin capital letter y with diaeresis"
+  },
+  {
+    "name": "latin small f with hook",
+    "html": "&fnof;",
+    "css": "\\0192",
+    "category": "latin-extended",
+    "tags": "latin small f with hook"
+  },
+  {
+    "name": "modifier letter circumflex accent",
+    "html": "&circ;",
+    "css": "\\02c6",
+    "category": "spacing-modifier",
+    "tags": "modifier letter circumflex accent"
+  },
+  {
+    "name": "small tilde",
+    "html": "&tilde;",
+    "css": "\\02dc",
+    "category": "spacing-modifier",
+    "tags": "small tilde"
+  },
+  {
+    "name": "greek capital letter alpha",
+    "html": "&Alpha;",
+    "css": "\\0391",
+    "category": "greek",
+    "tags": "greek capital letter alpha"
+  },
+  {
+    "name": "greek capital letter beta",
+    "html": "&Beta;",
+    "css": "\\0392",
+    "category": "greek",
+    "tags": "greek capital letter beta"
+  },
+  {
+    "name": "greek capital letter gamma",
+    "html": "&Gamma;",
+    "css": "\\0393",
+    "category": "greek",
+    "tags": "greek capital letter gamma"
+  },
+  {
+    "name": "greek capital letter delta",
+    "html": "&Delta;",
+    "css": "\\0394",
+    "category": "greek",
+    "tags": "greek capital letter delta"
+  },
+  {
+    "name": "greek capital letter epsilon",
+    "html": "&Epsilon;",
+    "css": "\\0395",
+    "category": "greek",
+    "tags": "greek capital letter epsilon"
+  },
+  {
+    "name": "greek capital letter zeta",
+    "html": "&Zeta;",
+    "css": "\\0396",
+    "category": "greek",
+    "tags": "greek capital letter zeta"
+  },
+  {
+    "name": "greek capital letter eta",
+    "html": "&Eta;",
+    "css": "\\0397",
+    "category": "greek",
+    "tags": "greek capital letter eta"
+  },
+  {
+    "name": "greek capital letter theta",
+    "html": "&Theta;",
+    "css": "\\0398",
+    "category": "greek",
+    "tags": "greek capital letter theta"
+  },
+  {
+    "name": "greek capital letter iota",
+    "html": "&Iota;",
+    "css": "\\0399",
+    "category": "greek",
+    "tags": "greek capital letter iota"
+  },
+  {
+    "name": "greek capital letter kappa",
+    "html": "&Kappa;",
+    "css": "\\039a",
+    "category": "greek",
+    "tags": "greek capital letter kappa"
+  },
+  {
+    "name": "greek capital letter lambda",
+    "html": "&Lambda;",
+    "css": "\\039b",
+    "category": "greek",
+    "tags": "greek capital letter lambda"
+  },
+  {
+    "name": "greek capital letter mu",
+    "html": "&Mu;",
+    "css": "\\039c",
+    "category": "greek",
+    "tags": "greek capital letter mu"
+  },
+  {
+    "name": "greek capital letter nu",
+    "html": "&Nu;",
+    "css": "\\039d",
+    "category": "greek",
+    "tags": "greek capital letter nu"
+  },
+  {
+    "name": "greek capital letter xi",
+    "html": "&Xi;",
+    "css": "\\039e",
+    "category": "greek",
+    "tags": "greek capital letter xi"
+  },
+  {
+    "name": "greek capital letter omicron",
+    "html": "&Omicron;",
+    "css": "\\039f",
+    "category": "greek",
+    "tags": "greek capital letter omicron"
+  },
+  {
+    "name": "greek capital letter pi",
+    "html": "&Pi;",
+    "css": "\\03a0",
+    "category": "greek",
+    "tags": "greek capital letter pi"
+  },
+  {
+    "name": "greek capital letter rho",
+    "html": "&Rho;",
+    "css": "\\03a1",
+    "category": "greek",
+    "tags": "greek capital letter rho"
+  },
+  {
+    "name": "greek capital letter sigma",
+    "html": "&Sigma;",
+    "css": "\\03a3",
+    "category": "greek",
+    "tags": "greek capital letter sigma"
+  },
+  {
+    "name": "greek capital letter tau",
+    "html": "&Tau;",
+    "css": "\\03a4",
+    "category": "greek",
+    "tags": "greek capital letter tau"
+  },
+  {
+    "name": "greek capital letter upsilon",
+    "html": "&Upsilon;",
+    "css": "\\03a5",
+    "category": "greek",
+    "tags": "greek capital letter upsilon"
+  },
+  {
+    "name": "greek capital letter phi",
+    "html": "&Phi;",
+    "css": "\\03a6",
+    "category": "greek",
+    "tags": "greek capital letter phi"
+  },
+  {
+    "name": "greek capital letter chi",
+    "html": "&Chi;",
+    "css": "\\03a7",
+    "category": "greek",
+    "tags": "greek capital letter chi"
+  },
+  {
+    "name": "greek capital letter psi",
+    "html": "&Psi;",
+    "css": "\\03a8",
+    "category": "greek",
+    "tags": "greek capital letter psi"
+  },
+  {
+    "name": "greek capital letter omega",
+    "html": "&Omega;",
+    "css": "\\03a9",
+    "category": "greek",
+    "tags": "greek capital letter omega"
+  },
+  {
+    "name": "greek small letter alpha",
+    "html": "&alpha;",
+    "css": "\\03b1",
+    "category": "greek",
+    "tags": "greek small letter alpha"
+  },
+  {
+    "name": "greek small letter beta",
+    "html": "&beta;",
+    "css": "\\03b2",
+    "category": "greek",
+    "tags": "greek small letter beta"
+  },
+  {
+    "name": "greek small letter gamma",
+    "html": "&gamma;",
+    "css": "\\03b3",
+    "category": "greek",
+    "tags": "greek small letter gamma"
+  },
+  {
+    "name": "greek small letter delta",
+    "html": "&delta;",
+    "css": "\\03b4",
+    "category": "greek",
+    "tags": "greek small letter delta"
+  },
+  {
+    "name": "greek small letter epsilon",
+    "html": "&epsilon;",
+    "css": "\\03b5",
+    "category": "greek",
+    "tags": "greek small letter epsilon"
+  },
+  {
+    "name": "greek small letter zeta",
+    "html": "&zeta;",
+    "css": "\\03b6",
+    "category": "greek",
+    "tags": "greek small letter zeta"
+  },
+  {
+    "name": "greek small letter eta",
+    "html": "&eta;",
+    "css": "\\03b7",
+    "category": "greek",
+    "tags": "greek small letter eta"
+  },
+  {
+    "name": "greek small letter theta",
+    "html": "&theta;",
+    "css": "\\03b8",
+    "category": "greek",
+    "tags": "greek small letter theta"
+  },
+  {
+    "name": "greek small letter iota",
+    "html": "&iota;",
+    "css": "\\03b9",
+    "category": "greek",
+    "tags": "greek small letter iota"
+  },
+  {
+    "name": "greek small letter kappa",
+    "html": "&kappa;",
+    "css": "\\03ba",
+    "category": "greek",
+    "tags": "greek small letter kappa"
+  },
+  {
+    "name": "greek small letter lambda",
+    "html": "&lambda;",
+    "css": "\\03bb",
+    "category": "greek",
+    "tags": "greek small letter lambda"
+  },
+  {
+    "name": "greek small letter mu",
+    "html": "&mu;",
+    "css": "\\03bc",
+    "category": "greek",
+    "tags": "greek small letter mu"
+  },
+  {
+    "name": "greek small letter nu",
+    "html": "&nu;",
+    "css": "\\03bd",
+    "category": "greek",
+    "tags": "greek small letter nu"
+  },
+  {
+    "name": "greek small letter xi",
+    "html": "&xi;",
+    "css": "\\03be",
+    "category": "greek",
+    "tags": "greek small letter xi"
+  },
+  {
+    "name": "greek small letter omicron",
+    "html": "&omicron;",
+    "css": "\\03bf",
+    "category": "greek",
+    "tags": "greek small letter omicron"
+  },
+  {
+    "name": "greek small letter pi",
+    "html": "&pi;",
+    "css": "\\03c0",
+    "category": "greek",
+    "tags": "greek small letter pi"
+  },
+  {
+    "name": "greek small letter rho",
+    "html": "&rho;",
+    "css": "\\03c1",
+    "category": "greek",
+    "tags": "greek small letter rho"
+  },
+  {
+    "name": "greek small letter final sigma",
+    "html": "&sigmaf;",
+    "css": "\\03C2",
+    "category": "greek",
+    "tags": "greek small letter final sigma"
+  },
+  {
+    "name": "greek small letter sigma",
+    "html": "&sigma;",
+    "css": "\\03C3",
+    "category": "greek",
+    "tags": "greek small letter sigma"
+  },
+  {
+    "name": "greek small letter tau",
+    "html": "&tau;",
+    "css": "\\03C4",
+    "category": "greek",
+    "tags": "greek small letter tau"
+  },
+  {
+    "name": "greek small letter upsilon",
+    "html": "&upsilon;",
+    "css": "\\03C5",
+    "category": "greek",
+    "tags": "greek small letter upsilon"
+  },
+  {
+    "name": "greek small letter phi",
+    "html": "&phi;",
+    "css": "\\03C6",
+    "category": "greek",
+    "tags": "greek small letter phi"
+  },
+  {
+    "name": "greek small letter chi",
+    "html": "&chi;",
+    "css": "\\03C7",
+    "category": "greek",
+    "tags": "greek small letter chi"
+  },
+  {
+    "name": "greek small letter psi",
+    "html": "&psi;",
+    "css": "\\03C8",
+    "category": "greek",
+    "tags": "greek small letter psi"
+  },
+  {
+    "name": "greek small letter omega",
+    "html": "&omega;",
+    "css": "\\03C9",
+    "category": "greek",
+    "tags": "greek small letter omega"
+  },
+  {
+    "name": "greek small letter theta symbol",
+    "html": "&thetasym;",
+    "css": "\\03D1",
+    "category": "greek",
+    "tags": "greek small letter theta symbol"
+  },
+  {
+    "name": "greek upsilon with hook symbol",
+    "html": "&upsih;",
+    "css": "\\03D2",
+    "category": "greek",
+    "tags": "greek upsilon with hook symbol"
+  },
+  {
+    "name": "greek pi symbol",
+    "html": "&piv;",
+    "css": "\\03D6",
+    "category": "greek",
+    "tags": "greek pi symbol"
+  },
+  {
+    "name": "en space",
+    "html": "&ensp;",
+    "css": "\\2002",
+    "category": "punctuation",
+    "tags": "en space"
+  },
+  {
+    "name": "em space",
+    "html": "&emsp;",
+    "css": "\\2003",
+    "category": "punctuation",
+    "tags": "em space"
+  },
+  {
+    "name": "thin space",
+    "html": "&thinsp;",
+    "css": "\\2009",
+    "category": "punctuation",
+    "tags": "thin space"
+  },
+  {
+    "name": "zero width non-joiner",
+    "html": "&zwnj;",
+    "css": "\\200C",
+    "category": "punctuation",
+    "tags": "zero width nonjoiner"
+  },
+  {
+    "name": "zero width joiner",
+    "html": "&zwj;",
+    "css": "\\200D",
+    "category": "punctuation",
+    "tags": "zero width joiner"
+  },
+  {
+    "name": "left-to-right mark",
+    "html": "&lrm;",
+    "css": "\\200E",
+    "category": "punctuation",
+    "tags": "lefttoright mark"
+  },
+  {
+    "name": "right-to-left mark",
+    "html": "&rlm;",
+    "css": "\\200F",
+    "category": "punctuation",
+    "tags": "righttoleft mark"
+  },
+  {
+    "name": "en dash",
+    "html": "&ndash;",
+    "css": "\\2013",
+    "category": "punctuation",
+    "tags": "en dash"
+  },
+  {
+    "name": "em dash",
+    "html": "&mdash;",
+    "css": "\\2014",
+    "category": "punctuation",
+    "tags": "em dash"
+  },
+  {
+    "name": "left single quotation mark",
+    "html": "&lsquo;",
+    "css": "\\2018",
+    "category": "punctuation",
+    "tags": "left single quotation mark"
+  },
+  {
+    "name": "right single quotation mark",
+    "html": "&rsquo;",
+    "css": "\\2019",
+    "category": "punctuation",
+    "tags": "right single quotation mark"
+  },
+  {
+    "name": "single low-9 quotation mark",
+    "html": "&sbquo;",
+    "css": "\\201A",
+    "category": "punctuation",
+    "tags": "single low quotation mark"
+  },
+  {
+    "name": "left double quotation mark",
+    "html": "&ldquo;",
+    "css": "\\201C",
+    "category": "punctuation",
+    "tags": "left double quotation mark"
+  },
+  {
+    "name": "right double quotation mark",
+    "html": "&rdquo;",
+    "css": "\\201D",
+    "category": "punctuation",
+    "tags": "right double quotation mark"
+  },
+  {
+    "name": "double low-9 quotation mark",
+    "html": "&bdquo;",
+    "css": "\\201E",
+    "category": "punctuation",
+    "tags": "double low quotation mark"
+  },
+  {
+    "name": "dagger",
+    "html": "&dagger;",
+    "css": "\\2020",
+    "category": "punctuation",
+    "tags": "dagger"
+  },
+  {
+    "name": "double dagger",
+    "html": "&Dagger;",
+    "css": "\\2021",
+    "category": "punctuation",
+    "tags": "double dagger"
+  },
+  {
+    "name": "per mille sign",
+    "html": "&permil;",
+    "css": "\\2030",
+    "category": "punctuation",
+    "tags": "per mille sign"
+  },
+  {
+    "name": "single left-pointing angle quotation mark",
+    "html": "&lsaquo;",
+    "css": "\\2039",
+    "category": "punctuation",
+    "tags": "single leftpointing angle quotation mark"
+  },
+  {
+    "name": "single right-pointing angle quotation mark",
+    "html": "&rsaquo;",
+    "css": "\\203A",
+    "category": "punctuation",
+    "tags": "single rightpointing angle quotation mark"
+  },
+  {
+    "name": "bullet",
+    "html": "&bull;",
+    "css": "\\2022",
+    "category": "punctuation",
+    "tags": "bullet aka black small circle\nbullet is not the same as bullet operator  u"
+  },
+  {
+    "name": "horizontal ellipsis",
+    "html": "&hellip;",
+    "css": "\\2026",
+    "category": "punctuation",
+    "tags": "horizontal ellipsis aka three dot leader"
+  },
+  {
+    "name": "prime",
+    "html": "&prime;",
+    "css": "\\2032",
+    "category": "punctuation",
+    "tags": "prime aka minutes aka feet"
+  },
+  {
+    "name": "double prime",
+    "html": "&Prime;",
+    "css": "\\2033",
+    "category": "punctuation",
+    "tags": "double prime aka seconds aka inches"
+  },
+  {
+    "name": "overline",
+    "html": "&oline;",
+    "css": "\\203E",
+    "category": "punctuation",
+    "tags": "overline aka spacing overscore"
+  },
+  {
+    "name": "fraction slash",
+    "html": "&frasl;",
+    "css": "\\2044",
+    "category": "punctuation",
+    "tags": "fraction slash"
+  },
+  {
+    "name": "script capital P",
+    "html": "&weierp;",
+    "css": "\\2118",
+    "category": "letter-like",
+    "tags": "script capital p aka power set aka weierstrass p"
+  },
+  {
+    "name": "blackletter capital I",
+    "html": "&image;",
+    "css": "\\2111",
+    "category": "letter-like",
+    "tags": "blackletter capital i aka imaginary part"
+  },
+  {
+    "name": "blackletter capital R",
+    "html": "&real;",
+    "css": "\\211C",
+    "category": "letter-like",
+    "tags": "blackletter capital r aka real part symbol"
+  },
+  {
+    "name": "trade mark sign",
+    "html": "&trade;",
+    "css": "\\2122",
+    "category": "letter-like",
+    "tags": "trade mark sign"
+  },
+  {
+    "name": "alef symbol",
+    "html": "&alefsym;",
+    "css": "\\2135",
+    "category": "letter-like",
+    "tags": "alef symbol"
+  },
+  {
+    "name": "leftwards arrow",
+    "html": "&larr;",
+    "css": "\\2190",
+    "category": "arrows",
+    "tags": "leftwards arrow"
+  },
+  {
+    "name": "upwards arrow",
+    "html": "&uarr;",
+    "css": "\\2191",
+    "category": "arrows",
+    "tags": "upwards arrow"
+  },
+  {
+    "name": "rightwards arrow",
+    "html": "&rarr;",
+    "css": "\\2192",
+    "category": "arrows",
+    "tags": "rightwards arrow"
+  },
+  {
+    "name": "downwards arrow",
+    "html": "&darr;",
+    "css": "\\2193",
+    "category": "arrows",
+    "tags": "downwards arrow"
+  },
+  {
+    "name": "left right arrow",
+    "html": "&harr;",
+    "css": "\\2194",
+    "category": "arrows",
+    "tags": "left right arrow"
+  },
+  {
+    "name": "downwards arrow with corner leftwards",
+    "html": "&crarr;",
+    "css": "\\21B5",
+    "category": "arrows",
+    "tags": "downwards arrow with corner leftwards aka carriage return"
+  },
+  {
+    "name": "leftwards double arrow\ncan be used for ‘is implied by’",
+    "html": "&lArr;",
+    "css": "\\21D0",
+    "category": "arrows",
+    "tags": "leftwards double arrow\ncan be used for is implied by"
+  },
+  {
+    "name": "upwards double arrow",
+    "html": "&uArr;",
+    "css": "\\21D1",
+    "category": "arrows",
+    "tags": "upwards double arrow"
+  },
+  {
+    "name": "rightwards double arrow",
+    "html": "&rArr;",
+    "css": "\\21D2",
+    "category": "arrows",
+    "tags": "rightwards double arrow"
+  },
+  {
+    "name": "downwards double arrow",
+    "html": "&dArr;",
+    "css": "\\21D3",
+    "category": "arrows",
+    "tags": "downwards double arrow"
+  },
+  {
+    "name": "left right double arrow",
+    "html": "&hArr;",
+    "css": "\\21D4",
+    "category": "arrows",
+    "tags": "left right double arrow"
+  },
+  {
+    "name": "black left pointing triangle",
+    "html": "&#9668;",
+    "css": "\\25C0",
+    "category": "arrows",
+    "tags": "black left pointing triangle"
+  },
+  {
+    "name": "black right pointing triangle",
+    "html": "&#9658;",
+    "css": "\\25b6",
+    "category": "arrows",
+    "tags": "black right pointing triangle"
+  },
+  {
+    "name": "black up pointing triangle",
+    "html": "&#9650;",
+    "css": "\\25b2",
+    "category": "arrows",
+    "tags": "black up pointing triangle"
+  },
+  {
+    "name": "black down pointing triangle",
+    "html": "&#9660;",
+    "css": "\\25bc",
+    "category": "arrows",
+    "tags": "black down pointing triangle"
+  },
+  {
+    "name": "for all",
+    "html": "&forall;",
+    "css": "\\2200",
+    "category": "mathematical",
+    "tags": "for all"
+  },
+  {
+    "name": "partial differential",
+    "html": "&part;",
+    "css": "\\2202",
+    "category": "mathematical",
+    "tags": "partial differential"
+  },
+  {
+    "name": "there exists",
+    "html": "&exist;",
+    "css": "\\2203",
+    "category": "mathematical",
+    "tags": "there exists"
+  },
+  {
+    "name": "empty set",
+    "html": "&empty;",
+    "css": "\\2205",
+    "category": "mathematical",
+    "tags": "empty set aka null set aka diameter"
+  },
+  {
+    "name": "nabla",
+    "html": "&nabla;",
+    "css": "\\2207",
+    "category": "mathematical",
+    "tags": "nabla aka backward difference"
+  },
+  {
+    "name": "element of",
+    "html": "&isin;",
+    "css": "\\2208",
+    "category": "mathematical",
+    "tags": "element of"
+  },
+  {
+    "name": "not an element of",
+    "html": "&notin;",
+    "css": "\\2209",
+    "category": "mathematical",
+    "tags": "not an element of"
+  },
+  {
+    "name": "contains as member",
+    "html": "&ni;",
+    "css": "\\220B",
+    "category": "mathematical",
+    "tags": "contains as member"
+  },
+  {
+    "name": "n-ary product",
+    "html": "&prod;",
+    "css": "\\220F",
+    "category": "mathematical",
+    "tags": "nary product aka product sign"
+  },
+  {
+    "name": "n-ary sumation",
+    "html": "&sum;",
+    "css": "\\2211",
+    "category": "mathematical",
+    "tags": "nary sumation"
+  },
+  {
+    "name": "minus sign",
+    "html": "&minus;",
+    "css": "\\2212",
+    "category": "mathematical",
+    "tags": "minus sign"
+  },
+  {
+    "name": "asterisk operator",
+    "html": "&lowast;",
+    "css": "\\2217",
+    "category": "mathematical",
+    "tags": "asterisk operator"
+  },
+  {
+    "name": "square root",
+    "html": "&radic;",
+    "css": "\\221A",
+    "category": "mathematical",
+    "tags": "square root aka radical sign"
+  },
+  {
+    "name": "proportional to",
+    "html": "&prop;",
+    "css": "\\221D",
+    "category": "mathematical",
+    "tags": "proportional to"
+  },
+  {
+    "name": "infinity",
+    "html": "&infin;",
+    "css": "\\221E",
+    "category": "mathematical",
+    "tags": "infinity"
+  },
+  {
+    "name": "angle",
+    "html": "&ang;",
+    "css": "\\2220",
+    "category": "mathematical",
+    "tags": "angle"
+  },
+  {
+    "name": "logical and",
+    "html": "&and;",
+    "css": "\\2227",
+    "category": "mathematical",
+    "tags": "logical and aka wedge"
+  },
+  {
+    "name": "logical or",
+    "html": "&or;",
+    "css": "\\2228",
+    "category": "mathematical",
+    "tags": "logical or aka vee"
+  },
+  {
+    "name": "intersection",
+    "html": "&cap;",
+    "css": "\\2229",
+    "category": "mathematical",
+    "tags": "intersection aka cap"
+  },
+  {
+    "name": "union",
+    "html": "&cup;",
+    "css": "\\222A",
+    "category": "mathematical",
+    "tags": "union aka cup"
+  },
+  {
+    "name": "integral",
+    "html": "&int;",
+    "css": "\\222B",
+    "category": "mathematical",
+    "tags": "integral"
+  },
+  {
+    "name": "therefore",
+    "html": "&there4;",
+    "css": "\\2234",
+    "category": "mathematical",
+    "tags": "therefore"
+  },
+  {
+    "name": "tilde",
+    "html": "&sim;",
+    "css": "\\223C",
+    "category": "mathematical",
+    "tags": "tilde"
+  },
+  {
+    "name": "approximately equal to",
+    "html": "&cong;",
+    "css": "\\2245",
+    "category": "mathematical",
+    "tags": "approximately equal to"
+  },
+  {
+    "name": "almost equal to",
+    "html": "&asymp;",
+    "css": "\\2248",
+    "category": "mathematical",
+    "tags": "almost equal to aka asymptotic to"
+  },
+  {
+    "name": "not equal to",
+    "html": "&ne;",
+    "css": "\\2260",
+    "category": "mathematical",
+    "tags": "not equal to"
+  },
+  {
+    "name": "identical to",
+    "html": "&equiv;",
+    "css": "\\2261",
+    "category": "mathematical",
+    "tags": "identical to"
+  },
+  {
+    "name": "less-than or equal to",
+    "html": "&le;",
+    "css": "\\2264",
+    "category": "mathematical",
+    "tags": "lessthan or equal to"
+  },
+  {
+    "name": "greater-than or equal to",
+    "html": "&ge;",
+    "css": "\\2265",
+    "category": "mathematical",
+    "tags": "greaterthan or equal to"
+  },
+  {
+    "name": "subset of",
+    "html": "&sub;",
+    "css": "\\2282",
+    "category": "mathematical",
+    "tags": "subset of"
+  },
+  {
+    "name": "superset of",
+    "html": "&sup;",
+    "css": "\\2283",
+    "category": "mathematical",
+    "tags": "superset of"
+  },
+  {
+    "name": "not a subset of",
+    "html": "&nsub;",
+    "css": "\\2284",
+    "category": "mathematical",
+    "tags": "not a subset of"
+  },
+  {
+    "name": "subset of or equal to",
+    "html": "&sube;",
+    "css": "\\2286",
+    "category": "mathematical",
+    "tags": "subset of or equal to"
+  },
+  {
+    "name": "superset of or equal to",
+    "html": "&supe;",
+    "css": "\\2287",
+    "category": "mathematical",
+    "tags": "superset of or equal to"
+  },
+  {
+    "name": "circled plus",
+    "html": "&oplus;",
+    "css": "\\2295",
+    "category": "mathematical",
+    "tags": "circled plus aka direct sum"
+  },
+  {
+    "name": "circled times",
+    "html": "&otimes;",
+    "css": "\\2297",
+    "category": "mathematical",
+    "tags": "circled times aka vector product"
+  },
+  {
+    "name": "up tack",
+    "html": "&perp;",
+    "css": "\\22A5",
+    "category": "mathematical",
+    "tags": "up tack"
+  },
+  {
+    "name": "dot operator",
+    "html": "&sdot;",
+    "css": "\\22C5",
+    "category": "mathematical",
+    "tags": "dot operator"
+  },
+  {
+    "name": "left ceiling",
+    "html": "&lceil;",
+    "css": "\\2308",
+    "category": "technical",
+    "tags": "left ceiling aka apl upstile"
+  },
+  {
+    "name": "right ceiling",
+    "html": "&rceil;",
+    "css": "\\2309",
+    "category": "technical",
+    "tags": "right ceiling"
+  },
+  {
+    "name": "left floor",
+    "html": "&lfloor;",
+    "css": "\\230A",
+    "category": "technical",
+    "tags": "left floor aka apl downstile"
+  },
+  {
+    "name": "right floor",
+    "html": "&rfloor;",
+    "css": "\\230B",
+    "category": "technical",
+    "tags": "right floor"
+  },
+  {
+    "name": "left-pointing angle bracket",
+    "html": "&lang;",
+    "css": "\\2329",
+    "category": "technical",
+    "tags": "leftpointing angle bracket"
+  },
+  {
+    "name": "right-pointing angle bracket",
+    "html": "&rang;",
+    "css": "\\232A",
+    "category": "technical",
+    "tags": "rightpointing angle bracket"
+  },
+  {
+    "name": "lozenge",
+    "html": "&loz;",
+    "css": "\\25CA",
+    "category": "misc",
+    "tags": "lozenge"
+  },
+  {
+    "name": "black spade suit",
+    "html": "&spades;",
+    "css": "\\2660",
+    "category": "misc",
+    "tags": "black spade suit"
+  },
+  {
+    "name": "black club suit",
+    "html": "&clubs;",
+    "css": "\\2663",
+    "category": "misc",
+    "tags": "black club suit aka shamrock"
+  },
+  {
+    "name": "black heart suit",
+    "html": "&hearts;",
+    "css": "\\2665",
+    "category": "misc",
+    "tags": "black heart suit aka valentine"
+  },
+  {
+    "name": "black diamond suit",
+    "html": "&diams;",
+    "css": "\\2666",
+    "category": "misc",
+    "tags": "black diamond suit"
+  }
+]
