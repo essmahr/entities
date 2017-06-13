@@ -217,11 +217,12 @@
     "tags": "tilde"
   },
   {
-    "name": "no-break space",
+    "name": "non-breaking space",
     "html": "&nbsp;",
     "css": "\\00a0",
     "category": "latin",
-    "tags": "nobreak non breaking space"
+    "tags": "nobreak non breaking space",
+    "space": "standard"
   },
   {
     "name": "inverted exclamation mark",
@@ -1320,21 +1321,24 @@
     "html": "&ensp;",
     "css": "\\2002",
     "category": "punctuation",
-    "tags": "en space"
+    "tags": "en space",
+    "space": "en"
   },
   {
     "name": "em space",
     "html": "&emsp;",
     "css": "\\2003",
     "category": "punctuation",
-    "tags": "em space"
+    "tags": "em space",
+    "space": "em"
   },
   {
     "name": "thin space",
     "html": "&thinsp;",
     "css": "\\2009",
     "category": "punctuation",
-    "tags": "thin space"
+    "tags": "thin space",
+    "space": "thin"
   },
   {
     "name": "zero width non-joiner",
