@@ -1,23 +1,25 @@
 import React, { Component } from 'react';
+import debounce from 'just-debounce';
 
 import copyToClipboard from '../lib/copyToClipboard';
-import FlyAway from '../components/FlyAway';
+import fireFlyaway from '../lib/fireFlyaway';
 import SearchBar from '../components/SearchBar';
 import EntityList from '../components/EntityList';
 
-import { entities } from '../data/entities.json';
+import entities from '../data/entities.json';
 
 export default class AppContainer extends Component {
   constructor(props) {
     super(props);
 
-    this.handleInput = this.handleInput.bind(this);
+    this.handleInput = debounce(this.handleInput.bind(this), 200, true);
+
     this.handleButtonClick = this.handleButtonClick.bind(this);
 
     this.state = {
       searchTerm: '',
-      entities: entities.concat(entities),
-      searchResults: entities.concat(entities),
+      entities,
+      searchResults: entities,
       currentCopy: null,
       FlyAwayTarget: null,
     };
@@ -25,29 +27,35 @@ export default class AppContainer extends Component {
 
 
   handleInput(event) {
+    const searchTerm = event.target.value;
     this.setState({
-      searchTerm: event.target.value,
-      searchResults: this.getEntitiesForTerm(event.target.value),
+      searchTerm,
+      searchResults: this.getEntitiesForTerm(searchTerm),
     });
   }
 
   getEntitiesForTerm(term) {
     if (!term) return this.state.entities;
+    const searchResults = [];
 
-    return this.state.entities.filter((entity) => {
-      return entity.tags.indexOf(term.toLowerCase()) > -1;
-    });
+    for (let i = 0; i < this.state.entities.length; i++) {
+      const entity = this.state.entities[i];
+
+      if (entity.tags.indexOf(term.toLowerCase()) > -1) {
+        searchResults.push(entity);
+      }
+    }
+
+    return searchResults;
   }
 
   handleButtonClick(text, element, event) {
+    const timeStamp = new Date().getTime();
     copyToClipboard(text);
-    this.setState({
-      currentCopy: {
-        stamp: new Date().getTime(),
-        coords: {
-          x: event.pageX,
-          y: event.pageY - 40,
-        },
+    fireFlyaway({
+      position: {
+        x: event.clientX,
+        y: event.clientY - 40,
       }
     });
   }
@@ -61,7 +69,6 @@ export default class AppContainer extends Component {
           searchTerm={this.state.searchTerm}
           onButtonClick={this.handleButtonClick}
         />
-        <FlyAway currentCopy={this.state.currentCopy} />
       </div>
     );
   }

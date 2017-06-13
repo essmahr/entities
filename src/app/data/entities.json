@@ -4,14 +4,14 @@
     "html": "&quot;",
     "css": "\\0022",
     "category": "special-characters",
-    "tags": "quotation mark"
+    "tags": "quote quotation mark"
   },
   {
     "name": "number sign",
     "html": "&num;",
     "css": "\\0023",
     "category": "special-characters",
-    "tags": "number sign"
+    "tags": "number sign hash"
   },
   {
     "name": "dollar sign",
@@ -46,21 +46,21 @@
     "html": "&lpar;",
     "css": "\\0028",
     "category": "special-characters",
-    "tags": "left parenthesis"
+    "tags": "left opening parenthesis"
   },
   {
     "name": "right parenthesis",
     "html": "&rpar;",
     "css": "\\0029",
     "category": "special-characters",
-    "tags": "right parenthesis"
+    "tags": "right closing parenthesis"
   },
   {
     "name": "asterisk",
     "html": "&ast;",
     "css": "\\002a",
     "category": "special-characters",
-    "tags": "asterisk"
+    "tags": "asterisk star"
   },
   {
     "name": "plus sign",
@@ -81,21 +81,21 @@
     "html": "&minus;",
     "css": "\\002d",
     "category": "special-characters",
-    "tags": "hyphenminus"
+    "tags": "hyphen minus"
   },
   {
     "name": "full stop; period",
     "html": "&period;",
     "css": "\\002e",
     "category": "special-characters",
-    "tags": "full stop period"
+    "tags": "full stop period dot"
   },
   {
-    "name": "solidus; slash",
+    "name": "forward slash",
     "html": "&sol;",
     "css": "\\002f",
     "category": "special-characters",
-    "tags": "solidus slash"
+    "tags": "solidus forward slash"
   },
   {
     "name": "colon",
@@ -112,25 +112,25 @@
     "tags": "semicolon"
   },
   {
-    "name": "less-than",
+    "name": "less-than sign",
     "html": "&lt;",
     "css": "\\003c",
     "category": "special-characters",
-    "tags": "lessthan"
+    "tags": "less than"
   },
   {
     "name": "equals",
     "html": "&equals;",
     "css": "\\003d",
     "category": "special-characters",
-    "tags": "equals"
+    "tags": "equals sign"
   },
   {
     "name": "greater-than sign",
     "html": "&gt;",
     "css": "\\003e",
     "category": "special-characters",
-    "tags": "greaterthan sign"
+    "tags": "greater than sign"
   },
   {
     "name": "question mark",
@@ -140,11 +140,11 @@
     "tags": "question mark"
   },
   {
-    "name": "at sign; commercial at",
+    "name": "at sign",
     "html": "&commat;",
     "css": "\\0040",
     "category": "special-characters",
-    "tags": "at sign commercial at"
+    "tags": "at sign commercial"
   },
   {
     "name": "left square bracket",
@@ -172,7 +172,7 @@
     "html": "&Hat;",
     "css": "\\005e",
     "category": "special-characters",
-    "tags": "circumflex accent"
+    "tags": "circumflex accent hat"
   },
   {
     "name": "low line",
@@ -193,7 +193,7 @@
     "html": "&lcub;",
     "css": "\\007b",
     "category": "special-characters",
-    "tags": "left curly bracket"
+    "tags": "left opening curly bracket"
   },
   {
     "name": "vertical bar",
@@ -207,7 +207,7 @@
     "html": "&rcub;",
     "css": "\\007d",
     "category": "special-characters",
-    "tags": "right curly bracket"
+    "tags": "right closing curly bracket"
   },
   {
     "name": "tilde",
@@ -221,14 +221,14 @@
     "html": "&nbsp;",
     "css": "\\00a0",
     "category": "latin",
-    "tags": "nobreak space"
+    "tags": "nobreak non breaking space"
   },
   {
     "name": "inverted exclamation mark",
     "html": "&iexcl;",
     "css": "\\00a1",
     "category": "latin",
-    "tags": "inverted exclamation mark"
+    "tags": "inverted upside down exclamation mark"
   },
   {
     "name": "cent sign",

@@ -7,7 +7,7 @@ const SearchBar = function(props) {
 
   return (
     <div styleName="search-bar-container">
-      <input styleName="search-bar-input" placeholder="Search..." type="text" value={searchTerm} onChange={onChange}/>
+      <input styleName="search-bar-input" placeholder="Search..." type="text" onChange={onChange}/>
     </div>
   );
 }

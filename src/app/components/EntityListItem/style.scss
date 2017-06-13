@@ -3,7 +3,7 @@
 .entity-list-item-outer {
   position: relative;
   display: block;
-  flex: 0 0 20%;
+  flex: 0 0 percentage(1/6);
 
   &::after {
     display: block;
@@ -38,7 +38,7 @@
   flex-direction: column;
   justify-content: center;
   flex: 1 0 auto;
-  font-size: 80px;
+  font-size: 70px;
   line-height: 50px;
   font-weight: 300;
   color: $color-accent;
