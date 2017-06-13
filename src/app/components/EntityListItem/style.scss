@@ -21,7 +21,11 @@ $breakpoints: (
   &::after {
     display: block;
     content: "";
-    padding-top: 100%;
+    padding-top: 80%;
+
+    @include media($min: 480px) {
+      padding-top: 110%;
+    }
   }
 }
 
@@ -52,10 +56,14 @@ $breakpoints: (
   justify-content: center;
   align-items: center;
   flex: 1 0 auto;
-  font-size: calc(40px + 5vw);
+  font-size: calc(80px + 5vw);
   line-height: 1.4;
   font-weight: 300;
   color: $color-accent;
+
+  @include media($min: 480px) {
+    font-size: calc(40px + 5vw);
+  }
 }
 
 .entity-space {
@@ -105,7 +113,7 @@ $breakpoints: (
   left: 0;
   top: 0;
   right: 0;
-  font-size: 10px;
+  line-height: 1.6;
   font-weight: 500;
   padding: $gutter 0;
   color: $grey-dark;
@@ -113,6 +121,7 @@ $breakpoints: (
   transition: opacity 0.2s ease;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  font-size: calc(10px + 0.05vw);
 }
 
 .copy-button {

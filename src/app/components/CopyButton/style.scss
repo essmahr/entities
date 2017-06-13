@@ -15,6 +15,7 @@
   opacity: 0;
   transition: opacity 0.2s ease;
   cursor: pointer;
+  font-size: calc(12px + 0.05vw);
 
   &:hover {
     color: $color-secondary;

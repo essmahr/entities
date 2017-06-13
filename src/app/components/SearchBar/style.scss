@@ -11,7 +11,7 @@
   @extend %form-input;
   background-color: $color-background;
   border: 0;
-  padding: ($gutter * 2) 0 ($gutter * 2) ($gutter * 2);
+  padding: ($gutter * 1.5) 0 ($gutter * 1.5) ($gutter * 1.5);
   width: 100%;
   font-size: 24px;
 }
