@@ -66,47 +66,47 @@ $breakpoints: (
   }
 }
 
-.entity-space {
-  composes: entity-symbol;
+// .entity-space {
+//   composes: entity-symbol;
 
-  span {
-    height: 1.2em;
-    border: 2px dashed $grey-mid;
-    vertical-align: middle;
-  }
-}
+//   span {
+//     height: 1.2em;
+//     border: 2px dashed $grey-mid;
+//     vertical-align: middle;
+//   }
+// }
 
-.entity-space-standard {
-  composes: entity-space;
+// .entity-space-standard {
+//   composes: entity-space;
 
-  span {
-    width: 0.45em;
-  }
-}
+//   span {
+//     width: 0.45em;
+//   }
+// }
 
-.entity-space-en {
-  composes: entity-space;
+// .entity-space-en {
+//   composes: entity-space;
 
-  span {
-    width: 0.78em;
-  }
-}
+//   span {
+//     width: 0.78em;
+//   }
+// }
 
-.entity-space-em {
-  composes: entity-space;
+// .entity-space-em {
+//   composes: entity-space;
 
-  span {
-    width: 1.15em;
-  }
-}
+//   span {
+//     width: 1.15em;
+//   }
+// }
 
-.entity-space-thin {
-  composes: entity-space;
+// .entity-space-thin {
+//   composes: entity-space;
 
-  span {
-    width: 0.43em;
-  }
-}
+//   span {
+//     width: 0.43em;
+//   }
+// }
 
 .entity-name {
   position: absolute;

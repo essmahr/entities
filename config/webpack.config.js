@@ -29,14 +29,6 @@ var common = {
             presets: ['es2015', 'react', 'stage-0'],
           },
         },
-      },
-      {
-        test: /\.scss$/,
-        loaders: [
-          'style-loader?sourceMap',
-          'css-loader?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]',
-          'sass-loader?sourceMap'
-        ]
       }
     ]
   },
@@ -54,9 +46,19 @@ var common = {
   ]
 }
 
-var production = {};
-
 var dev = {
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        loaders: [
+          'style-loader?sourceMap',
+          'css-loader?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]',
+          'sass-loader?sourceMap'
+        ]
+      }
+    ]
+  },
   devServer: {
     historyApiFallback: true,
     hot: true,
@@ -66,6 +68,39 @@ var dev = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
+  ]
+};
+
+var production = {
+  module: {
+    rules: [
+      {
+        test: /\.scss$/,
+        loader: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            'css-loader?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]',
+            'sass-loader'
+          ]
+        }),
+      },
+    ]
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        'NODE_ENV': JSON.stringify('production')
+      }
+    }),
+    new ExtractTextPlugin({
+      filename: 'app.css',
+      allChunks: true,
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      compress: {
+        warnings: false
+      }
+    })
   ]
 };
 
