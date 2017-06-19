@@ -7,8 +7,8 @@ import SearchBar from '../components/SearchBar';
 import EntityList from '../components/EntityList';
 import Footer from '../components/Footer';
 
-import entities from '../data/entities.json';
 import styles from '../style/global.scss';
+import entities from '../data/entities.json';
 
 export default class AppContainer extends Component {
   constructor(props) {
