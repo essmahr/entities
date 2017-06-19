@@ -12,7 +12,7 @@ var common = {
   entry: path.resolve(__dirname, '../src/app/index.js'),
   devtool: 'source-map',
   output: {
-    path: __dirname + '/build',
+    path: path.join(__dirname, '..', '/build'),
     publicPath: '/',
     filename: 'bundle.js'
   },
