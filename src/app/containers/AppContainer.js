@@ -5,8 +5,10 @@ import copyToClipboard from '../lib/copyToClipboard';
 import fireFlyaway from '../lib/fireFlyaway';
 import SearchBar from '../components/SearchBar';
 import EntityList from '../components/EntityList';
+import Footer from '../components/Footer';
 
 import entities from '../data/entities.json';
+import styles from '../style/global.scss';
 
 export default class AppContainer extends Component {
   constructor(props) {
@@ -62,13 +64,14 @@ export default class AppContainer extends Component {
 
   render() {
     return (
-      <div className="page">
+      <div className={styles.page}>
         <SearchBar onChange={this.handleInput} searchTerm={this.state.searchTerm} />
         <EntityList
           entities={this.state.searchResults}
           searchTerm={this.state.searchTerm}
           onButtonClick={this.handleButtonClick}
         />
+        <Footer />
       </div>
     );
   }

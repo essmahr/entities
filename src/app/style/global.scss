@@ -1,6 +1,17 @@
 @import "~sanitize.css";
 @import "./resources";
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: $font-body;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }

@@ -1,0 +1,18 @@
+@import "../../style/resources";
+
+.footer {
+  text-align: center;
+  font-size: 11px;
+  padding: $gutter;
+  color: $grey-dark;
+  border-top: 1px solid $color-background;
+
+  a {
+    color: $color-secondary;
+  }
+}
+
+.separator {
+  display: inline-block;
+  margin: 0 $gutter;
+}

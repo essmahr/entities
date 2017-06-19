@@ -1,6 +1,7 @@
 @import "../../style/resources";
 
 .entities-container-outer {
+  flex: 1 0 auto;
   overflow: hidden;
   margin: ($gutter / 2);
 }
