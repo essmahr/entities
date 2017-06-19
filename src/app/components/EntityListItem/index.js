@@ -9,13 +9,13 @@ const EntityListItem = function(props) {
 
   const styleName = props.space
     ? `entity-space-${props.space}`
-    : 'entity-symbol';
+    : '';
 
   return (
     <li styleName="entity-list-item-outer">
       <div styleName="entity-list-item-inner">
         <div styleName="entity-name">{name}</div>
-        <div styleName={styleName}><span dangerouslySetInnerHTML={{__html: html}}></span></div>
+        <div styleName="entity-symbol"><span styleName={styleName} dangerouslySetInnerHTML={{__html: html}}></span></div>
         <CopyButton onClick={props.onButtonClick} type="css" content={css} styles={styles} />
         <CopyButton onClick={props.onButtonClick} type="html" content={html} styles={styles} />
       </div>
