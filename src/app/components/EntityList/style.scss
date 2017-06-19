@@ -1,6 +1,8 @@
 @import "../../style/resources";
 
 .entities-container-outer {
+  display: flex;
+  flex-direction: column;
   flex: 1 0 auto;
   overflow: hidden;
   margin: ($gutter / 2);
@@ -11,4 +13,10 @@
   flex-wrap: wrap;
   margin: 0 -2px 0 0;
   padding: 0;
+}
+
+.empty {
+  margin: auto;
+  color: $grey-mid;
+  font-size: 18px;
 }
