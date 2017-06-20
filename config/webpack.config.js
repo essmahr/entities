@@ -4,9 +4,20 @@ var merge = require('webpack-merge');
 var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var autoprefixer = require('autoprefixer');
 // var config = require('./public/app/config/env.js');
 
 var isProduction = process.env.NODE_ENV === 'production';
+
+var postcss = {
+  loader: 'postcss-loader',
+  options: {
+    plugins: () => [
+      autoprefixer({ browsers: ['last 2 versions'] }),
+    ]
+  }
+}
+
 
 var common = {
   entry: {
@@ -57,6 +68,7 @@ var dev = {
         loaders: [
           'style-loader?sourceMap',
           'css-loader?modules&importLoaders=1&localIdentName=[name]_[local]_[hash:base64:5]',
+          postcss,
           'sass-loader?sourceMap'
         ]
       }
@@ -82,8 +94,9 @@ var production = {
         loader: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            'css-loader?modules&importLoaders=1&localIdentName=[hash:base64:5]',
-            'sass-loader'
+            'css-loader?modules&sourceMap&importLoaders=1&localIdentName=[hash:base64:5]',
+            postcss,
+            'sass-loader?sourceMap'
           ]
         }),
       },
@@ -100,6 +113,7 @@ var production = {
       allChunks: true,
     }),
     new webpack.optimize.UglifyJsPlugin({
+      sourceMap: true,
       compress: {
         warnings: false
       }
