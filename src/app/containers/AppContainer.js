@@ -27,7 +27,6 @@ export default class AppContainer extends Component {
     };
   }
 
-
   handleInput(event) {
     const searchTerm = event.target.value;
     this.setState({

@@ -9,12 +9,15 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var isProduction = process.env.NODE_ENV === 'production';
 
 var common = {
-  entry: path.resolve(__dirname, '../src/app/index.js'),
+  entry: {
+    app: path.resolve(__dirname, '../src/app/index.js'),
+    vendor: ['react', 'react-dom', 'react-css-modules']
+  },
   devtool: 'source-map',
   output: {
     path: path.join(__dirname, '..', '/build'),
     publicPath: '/',
-    filename: 'bundle.js'
+    filename: '[name].js'
   },
   module: {
     rules: [
@@ -100,6 +103,10 @@ var production = {
       compress: {
         warnings: false
       }
+    }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: 'vendor',
+      minChunks: Infinity,
     })
   ]
 };
