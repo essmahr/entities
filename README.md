@@ -2,4 +2,4 @@
 
 Missing an entity? PR me!
 
-Think an entity could be tagged better? PR me!
+Think an entity could be [tagged](/src/app/data/entities.json) better? PR me!

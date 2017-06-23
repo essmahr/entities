@@ -3,8 +3,8 @@
 .flyaway {
   position: fixed;
   z-index: 10;
-  left: 30vw;
-  top: 30vh;
+  left: -2000px;
+  top: -2000px;
   display: inline-block;
   width: 70px;
   margin-left: -35px;
@@ -16,10 +16,10 @@
   box-shadow: 0 2px 10px rgba(#000, 0.1);
   animation-name: fade, flyAway;
   animation-iteration-count: 1, 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
+  animation-direction: normal, normal;
+  animation-fill-mode: forwards, forwards;
   animation-duration: 1.5s, 1.5s;
-  animation-delay: 0, 1s;
+  animation-delay: 0, 0;
   transform-origin: center -20px;
   animation-timing-function: linear, ease;
 }
