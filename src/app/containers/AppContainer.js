@@ -28,13 +28,13 @@ export default class AppContainer extends Component {
   }
 
   handleInput(event) {
-    const searchTerm = event.target.value;
-    debounce(term => {
+    const term = event.target.value;
+    debounce(searchTerm => {
       this.setState({
         searchTerm,
         searchResults: this.getEntitiesForTerm(searchTerm),
       });
-    }, 100)(searchTerm);
+    }, 100)(term);
   }
 
   getEntitiesForTerm(term) {
