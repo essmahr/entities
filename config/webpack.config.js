@@ -1,3 +1,4 @@
+require('dotenv').config();
 var webpack = require('webpack');
 var path = require('path');
 var merge = require('webpack-merge');
@@ -5,7 +6,6 @@ var autoprefixer = require('autoprefixer');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var autoprefixer = require('autoprefixer');
-// var config = require('./public/app/config/env.js');
 
 var isProduction = process.env.NODE_ENV === 'production';
 
@@ -52,7 +52,7 @@ var common = {
   plugins: [
     new HtmlWebpackPlugin({
       isProduction: isProduction,
-      analyticsKey: '',
+      analyticsKey: process.env.ANALYTICS_KEY,
       template: 'src/index.ejs',
       inject: 'body',
       hash: true,
