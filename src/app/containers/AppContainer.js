@@ -18,6 +18,8 @@ export default class AppContainer extends Component {
 
     this.handleButtonClick = this.handleButtonClick.bind(this);
 
+    this.setSearch = debounce(this.setSearch.bind(this), 200);
+
     this.state = {
       searchTerm: '',
       entities,
@@ -29,12 +31,14 @@ export default class AppContainer extends Component {
 
   handleInput(event) {
     const term = event.target.value;
-    debounce(searchTerm => {
-      this.setState({
-        searchTerm,
-        searchResults: this.getEntitiesForTerm(searchTerm),
-      });
-    }, 100)(term);
+    this.setSearch(term);
+  }
+
+  setSearch(searchTerm) {
+    this.setState({
+      searchTerm,
+      searchResults: this.getEntitiesForTerm(searchTerm),
+    });
   }
 
   getEntitiesForTerm(term) {
