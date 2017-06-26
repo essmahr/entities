@@ -14,7 +14,7 @@ export default class AppContainer extends Component {
   constructor(props) {
     super(props);
 
-    this.handleInput = debounce(this.handleInput.bind(this), 200, true);
+    this.handleInput = this.handleInput.bind(this);
 
     this.handleButtonClick = this.handleButtonClick.bind(this);
 
@@ -29,10 +29,12 @@ export default class AppContainer extends Component {
 
   handleInput(event) {
     const searchTerm = event.target.value;
-    this.setState({
-      searchTerm,
-      searchResults: this.getEntitiesForTerm(searchTerm),
-    });
+    debounce(term => {
+      this.setState({
+        searchTerm,
+        searchResults: this.getEntitiesForTerm(searchTerm),
+      });
+    }, 100)(searchTerm);
   }
 
   getEntitiesForTerm(term) {
