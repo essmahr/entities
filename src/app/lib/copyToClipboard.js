@@ -15,7 +15,7 @@ const copyToClipboard = function(text) {
   fakeElem.style.position = 'absolute';
   fakeElem.style.left = '-9999px';
   // Move element to the same position vertically
-  let yPosition = window.pageYOffset || document.documentElement.scrollTop;
+  const yPosition = window.pageYOffset || document.documentElement.scrollTop;
   fakeElem.style.top = `${yPosition}px`;
 
   fakeElem.setAttribute('readonly', '');
@@ -27,11 +27,9 @@ const copyToClipboard = function(text) {
 
   try {
     succeeded = document.execCommand('copy');
-  }
-  catch(err) {
+  } catch(err) {
     succeeded = false;
-  }
-  finally {
+  } finally {
     fakeElem.parentElement.removeChild(fakeElem);
   }
 }

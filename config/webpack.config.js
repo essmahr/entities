@@ -1,15 +1,14 @@
 require('dotenv').config();
-var webpack = require('webpack');
-var path = require('path');
-var merge = require('webpack-merge');
-var autoprefixer = require('autoprefixer');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var autoprefixer = require('autoprefixer');
+const webpack = require('webpack');
+const path = require('path');
+const merge = require('webpack-merge');
+const autoprefixer = require('autoprefixer');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-var isProduction = process.env.NODE_ENV === 'production';
+const isProduction = process.env.NODE_ENV === 'production';
 
-var postcss = {
+const postcss = {
   loader: 'postcss-loader',
   options: {
     plugins: () => [
@@ -18,8 +17,7 @@ var postcss = {
   }
 }
 
-
-var common = {
+const common = {
   entry: {
     app: path.resolve(__dirname, '../src/app/index.js'),
     vendor: ['react', 'react-dom', 'react-css-modules']
@@ -60,7 +58,7 @@ var common = {
   ]
 }
 
-var dev = {
+const dev = {
   module: {
     rules: [
       {
@@ -86,7 +84,7 @@ var dev = {
   ]
 };
 
-var production = {
+const production = {
   module: {
     rules: [
       {

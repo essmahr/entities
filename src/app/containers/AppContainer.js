@@ -15,17 +15,13 @@ export default class AppContainer extends Component {
     super(props);
 
     this.handleInput = this.handleInput.bind(this);
-
     this.handleButtonClick = this.handleButtonClick.bind(this);
-
     this.setSearch = debounce(this.setSearch.bind(this), 200);
 
     this.state = {
       searchTerm: '',
       entities,
       searchResults: entities,
-      currentCopy: null,
-      FlyAwayTarget: null,
     };
   }
 
@@ -57,7 +53,6 @@ export default class AppContainer extends Component {
   }
 
   handleButtonClick(text, element, event) {
-    const timeStamp = new Date().getTime();
     copyToClipboard(text);
     fireFlyaway({
       position: {
