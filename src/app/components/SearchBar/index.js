@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { Component } from 'react';
 import CSSModules from 'react-css-modules';
 import styles from './style.scss';
 
-const SearchBar = function(props) {
-  const { searchTerm, onChange } = props;
+class SearchBar extends Component {
+	componentDidMount() {
+		this.input.focus();
+	}
 
-  return (
-    <div styleName="search-bar-container">
-      <input styleName="search-bar-input" placeholder="Search..." type="text" onChange={onChange}/>
-    </div>
-  );
+	render() {
+	  return (
+	    <div styleName="search-bar-container">
+	      <input
+	      	styleName="search-bar-input"
+	      	placeholder="Search..."
+	      	type="text"
+	      	ref={el => this.input = el}
+	      	onChange={this.props.onChange}
+	      />
+	    </div>
+	  );
+	}
 }
 
 export default CSSModules(SearchBar, styles);
